@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <table>
+        
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div class="cf-cover">
+                        <div class="session-title row">
+                          <h2>Book Appointment</h2>
+                          <p>Fill all the details to make your appointment. </p>
+                        </div>
+                        <div class="form-row row">
+                          <div class="col-md-12">
+                            <label for="">Enter Full Name</label>
+                            <input type="text" required="" id="name" placeholder="Enter Full Name" class="form-control">
+                          </div>
+                        </div>
+                          <div class="form-row row">
+                          <div class="col-md-12">
+                            <label for="">Upload a photo</label>
+                            <input type="file" id="photo" placeholder="Choose file" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row row">
+                          <div class="col-md-12">
+                            <label for="">Gender</label>
+                            <select id="gender" name="gender" class="form-control" >
+                             <option value="bran"></option>
+                             <option value="Male">Male</option>
+                             <option value="female">Female</option>
+                             <option value="other">Other</option>
+                            </select>
+                          </div>
+         
+                        </div>
+                        <div class="form-row row">
+                          <div class="col-md-12">
+                            <label for="">Enter Email</label>
+                            <input type="text" id="email" placeholder="Enter Email Address" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row row">
+                          <div class="col-md-12">
+                            <label for="">Phone number</label>
+                            <input type="text" id="phone" placeholder="Enter Phone Name" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row row">
+                         <div class="col-md-12">
+                           <label for="">Enter Address</label>
+                           <input type="text" id="address" placeholder="Enter Address" class="form-control">
+                         </div>
+                       </div>
+                        <div class="form-row row">
+                          <div class="col-md-12">
+                            <label for="">Message</label>
+                            <textarea placeholder="Enter Message" id="message" rows="3" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-row row">
+                         <div class="col-md-12">
+                           <label for="">Date</label>
+                           <input type="date" id="date" placeholder="date" class="form-control">
+                         </div>
+                       </div>
+                       <div class="form-row row">
+                         <div class="col-md-12">
+                           <label for="">Timeslots</label>
+                           <select id="time" name="Choose time" class="form-control" >
+                             <option value="t1"></option>
+                             <option value="10:00Am-10:30Am">10:00Am-10:30Am</option>
+                             <option value="10:30AM-11:00AM">10:30AM-11:00AM</option>
+                             <option value="11:00AM-11:30AM">11:00AM-11:30AM</option>
+                             <option value="11:30AM-12:00PM">11:30AM-12:00PM</option>
+                             <option value="12:00PM-12:30PM">12:00PM-12:30PM</option>
+                             <option value="12:30PM-1:00PM">12:30PM-1:00PM</option>
+                             <option value="1:00PM-1:30PM">1:00PM-1:30PM</option>
+                             <option value="1:30PM-2:00PM">1:30PM-2:00PM</option>
+                             <option value="2:00PM-2:30PM">2:00PM-2:30PM</option>
+                             <option value="2:30PM-3:00PM">2:30PM-3:00PM</option>
+                             <option value="3:00PM-3:30PM">3:00PM-3:30PM</option>
+                             <option value="3:30PM-4:00PM">3:30PM-4:00PM</option>
+                             <option value="4:00PM-4:30PM">4:00PM-4:30PM</option>
+                             <option value="4:30PM-5:00PM">4:30PM-5:00PM</option>
+                             
+                            </select>
+                         </div>
+                       </div>
+                       <div class="form-row row">
+                         <div class="col-md-12">
+                           <label for="">Branch of visit</label>
+                           <select id="branch" name="branch" class="form-control" >
+                             <option value="branch"></option>
+                             <option value="branch1">Branch1</option>
+                             <option value="branch2">Branch2</option>
+                             <option value="branch3">Branch3</option>
+                            </select>
+                         </div>
+                       </div>
+                        <div class="form-row row agre">
+                          <div class="col-md-12">
+                            <p><input type="checkbox"> By Selecting This you Agree our <a href="#">Terms & Conditions</a></p>
+                          </div>
+                        </div>
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                      </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <h2>Appointment schedule will display here</h2>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>photo</th>
+                                <th>Gender</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Address</th>
+                                <th>Messages</th>
+                                <th>Date</th>
+                                <th>Timeslots</th>
+                                <th>Branch</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
